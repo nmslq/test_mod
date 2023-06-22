@@ -1,9 +1,9 @@
-local abc = {'wow', 'url'};
+local item = {'timeBar', 'healthBar', 'healthStrips'};
 
 function onCreate()
-    setProperty('timeBar.alpha', 0);
-    setProperty('healthBar.alpha', 0);
-    debugPrint(abc[2]);
+    for i = 1, 3 do
+        setProperty(item[i] .. '.alpha', 0);
+    end
 end
 
 function onStepHit()
